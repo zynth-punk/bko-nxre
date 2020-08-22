@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
+
 import { Message } from '@brunokoppel.com/api-interfaces';
+
+import BKNavBar from './components/NavBar'
 
 export const App = () => {
   const [m, setMessage] = useState<Message>({ message: '' });
@@ -13,6 +16,7 @@ export const App = () => {
   return (
     <>
       <div style={{ textAlign: 'center' }}>
+        <BKNavBar/>
         <h1>Welcome to brunokoppel.com!</h1>
         <img
           width="450"
