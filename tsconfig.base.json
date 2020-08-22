@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "rootDir": ".",
+    "rootDir": "./",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
@@ -14,9 +14,11 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "@brunokoppel.com/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@brunokoppel.com/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@brunokoppel.com/ui": ["libs/ui/src/index.ts"],
+      "@brunokoppel.com/test-library": ["libs/test-library/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

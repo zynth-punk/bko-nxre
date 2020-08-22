@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
 import { Message } from '@brunokoppel.com/api-interfaces';
-
-import BKNavBar from './components/NavBar'
+import { TestLibrary } from '@brunokoppel.com/test-library';
+import { Ui } from '@brunokoppel.com/ui';
 
 export const App = () => {
   const [m, setMessage] = useState<Message>({ message: '' });
@@ -16,12 +16,8 @@ export const App = () => {
   return (
     <>
       <div style={{ textAlign: 'center' }}>
-        <BKNavBar/>
-        <h1>Welcome to brunokoppel.com!</h1>
-        <img
-          width="450"
-          src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-        />
+        <Ui />
+        <TestLibrary />
       </div>
       <div>{m.message}</div>
     </>
