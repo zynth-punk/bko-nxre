@@ -10,8 +10,8 @@ import IG from './../../assets/IG-BnW.png';
 function BKNavBar() {
   return (
     <>
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="/">
+      <Navbar bg="light" expand="lg" style={{ alignContent: 'left' }}>
+        <Navbar.Brand href="/" style={{ alignSelf: 'center' }}>
           <Button size="sm" variant="light">
             <h3
               style={{
