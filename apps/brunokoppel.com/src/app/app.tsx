@@ -15,9 +15,8 @@ export const App = () => {
 
   return (
     <>
-      <div style={{ textAlign: 'center' }}>
+      <div>
         <Ui />
-        <TestLibrary />
       </div>
       <div>{m.message}</div>
     </>
